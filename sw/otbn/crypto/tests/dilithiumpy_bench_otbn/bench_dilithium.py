@@ -1,5 +1,5 @@
 import sys
-sys.path.append("/home/amin/Documents/opentitan/sw/otbn/crypto/tests/dilithiumpy_bench_otbn/dilithiumpy")
+sys.path.append("/home/ubuntu/opentitan/sw/otbn/crypto/tests/dilithiumpy_bench_otbn/dilithiumpy")
 
 import os
 from multiprocessing import Pool
@@ -78,7 +78,7 @@ def bench_verify(is_base):
 def run_bench(operation: str, is_base: bool):
     if __name__ == "sw.otbn.crypto.tests.dilithiumpy_bench_otbn.bench_dilithium":
 
-        con = sqlite3.connect("/home/amin/Documents/dilithium_benchmarks/dilithium_bench.db")
+        con = sqlite3.connect("/home/ubuntu/dilithium_benchmarks/dilithium_bench.db")
         cur = con.cursor()
         create_db(cur)
         print(f"Benchmark {operation}")
